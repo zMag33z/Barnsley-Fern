@@ -1,0 +1,21 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    height: 98.9259vh;
+}
+
+header {
+    margin: 10px 10px 10px 10px;
+}
+
+main {
+    margin: 10px 10px;
+    height: calc(88.7079% - 30px);
+}
+
+footer{
+    text-align: center;
+}
