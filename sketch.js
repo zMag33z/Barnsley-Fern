@@ -1,4 +1,6 @@
 const canvasSize = [600, 600];
+let fc = 0;
+
 var x = 0;
 var y = 0;
 
@@ -33,21 +35,15 @@ function nextPoint(){
     nextX = -0.15 * x + 0.28 * y;
     nextY = 0.26 * x + 0.24 * y + 0.44;
     }
-    console.log(myRandom, `
-    Update current POS`)
+    console.log(`Update current POS`)
     x=nextX;
     y=nextY;
 }
 
 function drawPoint(){
     console.log('Point pos draw here')
-
-    // values here are different than that of lesson just to remove leaf from edges
-    // adjust possibly the width and height and let the original values l
-    // let px = map(xn, -2.1820, 2.6558, 0, width);
-    // let py = map(yn, 0, 9.9983, height, 0);
-    let px = map(x, -2.236, 2.78, 0, width);
-    let py = map(y, -0.386, 10.23, height, 0);
+    let px = map(x, -2.1820, 2.6558, 0, width);
+    let py = map(y, 0, 9.9983, height, 0);
 
     point(px, py);
 }
@@ -62,6 +58,11 @@ function draw(){
         drawPoint();
         nextPoint();
         
+    }
+    fc++;
+    if(fc > 10000){
+        noLoop();
+        console.log('End Drawing')
     }
 
 }

@@ -19,3 +19,8 @@ main {
 footer{
     text-align: center;
 }
+
+canvas{
+    padding: 20px;
+    background-color: black;
+}
