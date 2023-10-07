@@ -3,11 +3,13 @@ var x = 0;
 var y = 0;
 
 function setup(){
+    console.log('Setup');
  createCanvas(...canvasSize);
  background(0);
 }
 
 function nextPoint(){
+    console.log('Random Chance');
     let nextX;
     let nextY;
 
@@ -17,6 +19,7 @@ function nextPoint(){
     //1
     nextX = 0;
     nextY = 0.16 * y;
+    
     }else if(myRandom < 0.86){
     //2
     nextX = 0.85 * x + 0.04 * y;
@@ -30,16 +33,19 @@ function nextPoint(){
     nextX = -0.15 * x + 0.28 * y;
     nextY = 0.26 * x + 0.24 * y + 0.44;
     }
-
+    console.log(myRandom, `
+    Update current POS`)
     x=nextX;
     y=nextY;
 }
 
 function drawPoint(){
-    stroke(255);
-    strokeWeight(2);
+    console.log('Point pos draw here')
 
     // values here are different than that of lesson just to remove leaf from edges
+    // adjust possibly the width and height and let the original values l
+    // let px = map(xn, -2.1820, 2.6558, 0, width);
+    // let py = map(yn, 0, 9.9983, height, 0);
     let px = map(x, -2.236, 2.78, 0, width);
     let py = map(y, -0.386, 10.23, height, 0);
 
@@ -47,9 +53,16 @@ function drawPoint(){
 }
 
 function draw(){
-    for(let i = 0; i < 100; i++){
-        drawPoint();
+    console.log('Draw')
+    stroke(255);
+    strokeWeight(1);
 
+    for(let i = 0; i < 100; i++){
+        console.log('Loop in Draw')
+        drawPoint();
         nextPoint();
+        
     }
+
 }
+

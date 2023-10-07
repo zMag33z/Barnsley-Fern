@@ -6,7 +6,9 @@ Computational design of a Barnsley Fern leaf.  In this lesson, offered by [The C
 ## Resources
 [The Coding Train, Algorithmic Botany](https://thecodingtrain.com/tracks/algorithmic-botany)
 
-[cdnjs-cloudFlare-P5.js](https://cdnjs.com/libraries/p5.js?ref=bulkan-evcimen.com)
+[cdnjs - cloudFlare - P5.js](https://cdnjs.com/libraries/p5.js?ref=bulkan-evcimen.com)
+
+[Wikipedia - Barnsley Fern](https://en.wikipedia.org/wiki/Barnsley_fern#Computer_generation)
 
 ## License:
   
