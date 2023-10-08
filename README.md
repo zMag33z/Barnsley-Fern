@@ -1,7 +1,7 @@
 # Barnsley Fern
 
 ## Description
-Computational design of a Barnsley Fern leaf.  In this lesson, offered by [The Coding Train](https://thecodingtrain.com), I harnessed my JavaScript skills to create interactive web applications using the p5.js library, all within the Cloudflare CDN environment. While initially anticipating a Java-based tutorial, I leveraged my JavaScript proficiency to craft this dynamic, yet very engaging project.
+Computational design of a Barnsley Fern leaf.  One of many Fractal Lessons offered by [The Coding Train](https://thecodingtrain.com). While initially anticipating a Java-based tutorial, I used JavaScript instead to craft this dynamic, yet very engaging design.  Leveraging the CDN - Cloudflare - P5.js library environment allows Javascript code to be transmutated into Java and be presented to the canvas.
 
 ## Resources
 [The Coding Train, Algorithmic Botany](https://thecodingtrain.com/tracks/algorithmic-botany)
